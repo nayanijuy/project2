@@ -1,0 +1,67 @@
+@import url(./common.css);
+
+.inner{
+    padding: 2.5rem;
+}
+
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.leeum, .hoam{
+    flex: 1 1 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2.5rem;
+    color: var(--txt_leeum_1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leeum{
+background-image: url(../imgs/cover_leeum_bg.jpg);
+}
+
+.hoam{
+background-image: url(../imgs/cover_hoam_bg.jpg);
+}
+
+.title{
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-top: 6rem;
+}
+
+h1{
+    font-size: 3.6rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .58);
+    text-align: center;
+}
+
+.link{
+    width: 45rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    padding: 0 1.5rem;
+    backdrop-filter: blur(30px) brightness(80%);
+    background-color: transparent;
+}
+
+.leeum .title .link a{
+    border-radius: 30rem;
+}

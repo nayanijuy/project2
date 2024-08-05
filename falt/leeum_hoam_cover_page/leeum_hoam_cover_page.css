@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: AktivGrotesk, -apple-system, BlinkMacSystemFont, Arial,
+    sans-serif;
+  font-size: 62.5%;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.wrap,
+.title,
+ul {
+  display: flex;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+}
+
+.leeum {
+  width: 50%;
+  position: relative;
+  background: url(./leeum-index-img-mobile-a9ddbf68c5f330de2d4775afdcad3c25.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+
+.hoam {
+  width: 50%;
+  position: relative;
+  background: url(./hoam-index-img-mobile-8ca1501d3830dd59ab7c16a5c8736950.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  bottom: 1.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title {
+  width: 50%;
+  text-align: center;
+  margin: 8rem auto;
+  color: white;
+  flex-direction: column;
+}
+
+.title h1 {
+  font-size: 5.5rem;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+}
+
+ul {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.leeum li a {
+  border-radius: 50px;
+}
+
+a {
+  display: block;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 5rem;
+  font-size: 2.3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+@media screen and (max-width:768px) {
+  .wrap{
+    flex-direction: column;
+  }
+  .leeum, .hoam{
+    width: 100%;
+    height: 50vh;
+  }
+}

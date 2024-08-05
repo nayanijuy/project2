@@ -1,0 +1,89 @@
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('/css/font/AktivGrotesk/AktivGrotesk_WKR_Bd-428c5af6812e35a533138fa92f5bc80c.woff2') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('/css/font/AktivGrotesk/AktivGrotesk_WKR_Md-798afb656525750f990606729753cf0d.woff2') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('/css/font/AktivGrotesk/AktivGrotesk_WKR_Rg-723ee09358a732f8227538f9c6c1d067.woff2') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('/css/font/AktivGrotesk/AktivGrotesk_WKR_Lt-9352dcfafa794f720dbf685a9a2d9d42.woff2') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('/css/font/Pretendard/woff2/Pretendard-Black-9c448b4c6a74fa9d0f3c5f587dddd61d.woff2') format('woff2'), url('/css/font/Pretendard/woff/Pretendard-Black-108b8f1852b7574d3358f0639a881281.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('/css/font/Pretendard/woff2/Pretendard-ExtraBold-6d788c9ff2c0479213ff4a11b547592c.woff2') format('woff2'), url('/css/font/Pretendard/woff/Pretendard-ExtraBold-d4880e20a9734f276d4cafe73e85594f.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('/css/font/Pretendard/woff2/Pretendard-Bold-ada305dc6b509a75b5e214975053bcb3.woff2') format('woff2'), url('/css/font/Pretendard/woff/Pretendard-Bold-436c06c8683ef66f24f4c14b3f3d17af.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('/css/font/Pretendard/woff2/Pretendard-SemiBold-6101e99fb33bfa6ab7f52390565a71e5.woff2') format('woff2'), url('/css/font/Pretendard/woff/Pretendard-SemiBold-110c1a531a196294447834b13c6901a4.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('/css/font/Pretendard/woff2/Pretendard-Medium-d801e8cc91183adaee1657a231180593.woff2') format('woff2'), url('/css/font/Pretendard/woff/Pretendard-Medium-7d0667cfd9122c91edd02dc554dc43b7.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('/css/font/Pretendard/woff2/Pretendard-Regular-8e19dfa697923356ce5710c7ca2b2a65.woff2') format('woff2'), url('/css/font/Pretendard/woff/Pretendard-Regular-9926c567fc09799590fc8043d08fccbb.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('/css/font/Pretendard/woff2/Pretendard-Light-53349e45ddb87964edb163e00e1c8c47.woff2') format('woff2'), url('/css/font/Pretendard/woff/Pretendard-Light-b80534d563147f78ef66fa56eedf8747.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('/css/font/Pretendard/woff2/Pretendard-ExtraLight-a96413cb14c07666b10527782084339f.woff2') format('woff2'), url('/css/font/Pretendard/woff/Pretendard-ExtraLight-1f5763d68da180dede6e3789d5adf979.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('/css/font/Pretendard/woff2/Pretendard-Thin-377e37748604e1df779361b4eb5c2e95.woff2') format('woff2'), url('/css/font/Pretendard/woff/Pretendard-Thin-dc58752c03bf9c22f0c5b8385a034428.woff') format('woff');
+}

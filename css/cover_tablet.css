@@ -1,0 +1,7 @@
+html{
+    min-width: inherit;
+}
+
+.wrap{
+    flex-direction: column;
+}
