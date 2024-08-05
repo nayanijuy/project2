@@ -143,6 +143,38 @@ header {
   column-gap: 1rem;
 }
 
+.fix_buttons{
+  font-size: 3rem;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fix_buttons .inner .custom{
+  display: block;
+  color: var(--txt_hoam_1);
+  background-color: var(--fill_hoam_3);
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  border-radius: 100%;
+}
+
+/* ====================================
+============== bar 모양, 위치 잡기 ===============    
+==================================== */
+
+.fix_buttons .inner .menu .bar {
+  display: block;
+  position: relative;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: var(--txt_hoam_1);
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
 .banner_card {
   width: 40%;
   max-width: 60rem;
@@ -172,6 +204,20 @@ header {
 
 .banner_card .banner_detail {
   margin-top: 3.4rem;
+}
+
+.scroll_icon{
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--fill_hoam_3);
+  border-radius: 100%;
+  background-image: url(../imgs/hoam/hoam_icon_scrolldown.svg);
+  background-position: center;
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ====================================
