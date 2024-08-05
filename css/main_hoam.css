@@ -76,12 +76,13 @@
 
 .button_large {
   font-size: 1.2rem;
+  letter-spacing: 0.1rem;
   font-weight: 600;
   color: var(--txt_hoam_1);
   border-radius: 30rem;
   height: 2.5rem;
   line-height: 2.5rem;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   background-color: var(--fill_hoam_3);
   border: 1px solid var(--fill_hoam_3);
   white-space: nowrap;
@@ -89,6 +90,7 @@
 
 .button_xlarge {
   font-size: 1.4rem;
+  letter-spacing: 0.1rem;
   font-weight: 600;
   color: var(--txt_hoam_1);
   border-radius: 30rem;
@@ -118,11 +120,16 @@ header {
   width: 100%;
   height: 6.4rem;
   position: fixed;
+  z-index: 10;
 }
 
 .gnb .inner {
   justify-content: space-between;
   align-items: center;
+}
+
+.gnb .inner .logo a img{
+  height: 1.9rem;
 }
 
 .gnb .inner .gnb_detail {
@@ -145,9 +152,15 @@ header {
 
 .fix_buttons{
   font-size: 3rem;
+  width: 100%;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 10;
+}
+
+.fix_buttons .inner{
+  justify-content: space-between
 }
 
 .fix_buttons .inner .custom{
@@ -161,18 +174,43 @@ header {
   border-radius: 100%;
 }
 
-/* ====================================
-============== bar 모양, 위치 잡기 ===============    
-==================================== */
+.fix_buttons .inner .menu{
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--fill_hoam_3);
+  border-radius: 100%;
+  align-content: center;
+}
 
 .fix_buttons .inner .menu .bar {
   display: block;
   position: relative;
   width: 3rem;
   height: 0.3rem;
+  margin: auto;
   background-color: var(--txt_hoam_1);
   border-radius: 8px;
   transition: all 0.5s;
+}
+
+.fix_buttons .inner .menu .bar::before, .bar::after{
+  content: "";
+  position: absolute;
+  height: 0.3rem;
+  width: 3rem;
+  background-color: var(--txt_hoam_1);
+  left: 50%;
+  margin-left: -50%;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.fix_buttons .inner .menu .bar::before{
+  bottom: -6px;
+}
+.fix_buttons .inner .menu .bar::after{
+  top: -6px;
 }
 
 .banner_card {

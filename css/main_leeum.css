@@ -14,18 +14,20 @@
 
 .button_large {
   font-size: 1.2rem;
+  letter-spacing: 0.1rem;
   font-weight: 600;
   color: var(--txt_leeum_3);
   border-radius: 30rem;
   height: 2.5rem;
   line-height: 2.5rem;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   background-color: var(--fill_leeum_4);
   border: 1px solid var(--fill_leeum_4);
   white-space: nowrap;
 }
 .button_xlarge {
   font-size: 1.4rem;
+  letter-spacing: 0.1rem;
   font-weight: 600;
   color: var(--txt_leeum_3);
   border-radius: 30rem;
@@ -35,6 +37,10 @@
   background-color: var(--fill_leeum_4);
   border: 1px solid var(--fill_leeum_4);
   white-space: nowrap;
+}
+
+.img{
+  overflow: hidden;
 }
 
 .img::before{
@@ -75,6 +81,7 @@ header {
   width: 100%;
   height: 6.4rem;
   position: fixed;
+  z-index: 10;
 }
 
 .gnb .inner {
@@ -98,6 +105,69 @@ header {
 
 .gnb .inner .btn {
   column-gap: 1rem;
+}
+
+.fix_buttons{
+  font-size: 3rem;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.fix_buttons .inner{
+  justify-content: space-between
+}
+
+.fix_buttons .inner .custom{
+  display: block;
+  color: var(--txt_leeum_3);
+  background-color: var(--fill_leeum_4);
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.fix_buttons .inner .menu{
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--fill_leeum_4);
+  border-radius: 100%;
+  align-content: center;
+}
+
+.fix_buttons .inner .menu .bar {
+  display: block;
+  position: relative;
+  width: 3rem;
+  height: 0.3rem;
+  margin: auto;
+  background-color: var(--txt_leeum_3);
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.fix_buttons .inner .menu .bar::before, .bar::after{
+  content: "";
+  position: absolute;
+  height: 0.3rem;
+  width: 3rem;
+  background-color: var(--txt_leeum_3);
+  left: 50%;
+  margin-left: -50%;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.fix_buttons .inner .menu .bar::before{
+  bottom: -6px;
+}
+.fix_buttons .inner .menu .bar::after{
+  top: -6px;
 }
 
 .banner_card {
@@ -129,6 +199,20 @@ header {
 
 .banner_card .banner_detail {
   margin-top: 3.4rem;
+}
+
+.scroll_icon{
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--fill_leeum_4);
+  border-radius: 100%;
+  background-image: url(../imgs/leeum/leeum_icon_scrolldown.svg);
+  background-position: center;
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ====================================
