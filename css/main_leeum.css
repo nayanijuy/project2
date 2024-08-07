@@ -25,6 +25,7 @@
   border: 1px solid var(--fill_leeum_4);
   white-space: nowrap;
 }
+
 .button_xlarge {
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
