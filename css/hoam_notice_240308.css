@@ -1,0 +1,19 @@
+/* ====================================
+============== add edit ===============    
+==================================== */
+
+.main_inner .contents .detail a{
+    display: inline-block;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    margin-bottom: 3rem;
+}
+
+.main_inner .contents .detail h5{
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.main_inner .contents .detail a+h5{
+    border-top: 1px solid var(--border_hoam_2);
+}

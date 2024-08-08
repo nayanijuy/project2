@@ -1,0 +1,217 @@
+@import url(./common.css);
+
+:root {
+  --gray_000: #ffffff;
+  --gray_100: #faf8f8;
+  --gray_200: #f2eeee;
+  --gray_300: #e4dfdf;
+  --gray_400: #d1cbcb;
+  --gray_500: #b6b1b1;
+  --gray_600: #948e8e;
+  --gray_700: #686464;
+  --gray_800: #353333;
+  --gray_900: #000000;
+  --bg_leeum_10: #000000;
+  --bg_leeum_9: #57575c;
+  --bg_leeum_8: #1878f0;
+  --bg_leeum_7: #a5a5aa;
+  --bg_leeum_6: #d2d2d2;
+  --bg_leeum_5: #e1e1e1;
+  --bg_leeum_4: #f8f1e8;
+  --bg_leeum_3: #f2f2f2;
+  --bg_leeum_2: #f8f9fd;
+  --bg_leeum_1: #ffffff;
+  --txt_leeum_6: #000000;
+  --txt_leeum_5: #1878f0;
+  --txt_leeum_4: #aaaaaa;
+  --txt_leeum_3: #57575c;
+  --txt_leeum_2: #a5a5aa;
+  --txt_leeum_1: #ffffff;
+  --fill_leeum_6: #000000;
+  --fill_leeum_5: #aaaaaa;
+  --fill_leeum_4: #f2f2f2;
+  --fill_leeum_3: #57575c;
+  --fill_leeum_2: #d2d2d2;
+  --fill_leeum_1: #ffffff;
+  --border_leeum_5: #57575c;
+  --border_leeum_4: #d2d2d2;
+  --border_leeum_3: #2b2b2b;
+  --border_leeum_2: #aaaaaa;
+  --border_leeum_1: #f2f2f2;
+  --fill_hoam_3: #00662e;
+  --fill_hoam_2: #000000;
+  --fill_hoam_1: #ffffff;
+  --border_hoam_5: #00662e;
+  --border_hoam_4: #f0ece9;
+  --border_hoam_3: #000f9f;
+  --border_hoam_2: #d2ccc7;
+  --border_hoam_1: #f2f2f2;
+  --txt_hoam_6: #000000;
+  --txt_hoam_5: #7d7369;
+  --txt_hoam_4: #d2ccc7;
+  --txt_hoam_3: #5f574e;
+  --txt_hoam_2: #1878f0;
+  --txt_hoam_1: #ffffff;
+  --bg_hoam_10: #000000;
+  --bg_hoam_7: #000f9f;
+  --bg_hoam_6: #00662e;
+  --bg_hoam_5: #7d7369;
+  --bg_hoam_4: #1878f0;
+  --bg_hoam_3: #ff7276;
+  --bg_hoam_2: #f8f9fd;
+  --bg_hoam_1: #ffffff;
+}
+
+.inner {
+  padding: 0 2.5rem;
+}
+
+.main_inner {
+  padding: 5rem 10% 10rem;
+}
+
+.button_large {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: var(--txt_hoam_1);
+  border-radius: 30rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  background-color: var(--fill_hoam_3);
+  border: 1px solid var(--fill_hoam_3);
+  white-space: nowrap;
+}
+
+.button_xlarge {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: var(--txt_hoam_1);
+  border-radius: 30rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  padding: 0 1.5rem;
+  background-color: var(--fill_hoam_3);
+  border: 1px solid var(--fill_hoam_3);
+  white-space: nowrap;
+}
+
+/* ====================================
+============== header ===============    
+==================================== */
+
+.inner {
+  height: 6.4rem;
+  align-items: center;
+}
+
+.inner .logo a img {
+  height: 1.9rem;
+}
+
+/* ====================================
+============== main ===============    
+==================================== */
+
+main{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+section{
+    border: 1px solid var(--border_hoam_2);
+    width: 40rem;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+}
+
+section .box{
+    flex-direction: column;
+}
+
+section .box h2{
+    margin-bottom: 3rem;
+}
+
+section .box input{
+    width: 100%;
+    height: 3.6rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    border: 1px solid var(--border_hoam_2);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--txt_hoam_6);
+}
+
+section .box>a{
+    display: block;
+    box-sizing: border-box;
+    background-color: var(--bg_hoam_6);
+    color: var(--txt_hoam_1);
+    width: 100%;
+    height: 3.6rem;
+    line-height: 3.6rem;
+    padding: 0 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+section .box .find{
+    text-align: left;
+}
+
+section .box .find>a{
+    display: inline-block;
+    text-align: left;
+    font-size: 1.4rem;
+    color: var(--txt_hoam_3);
+}
+
+section .box .find>a+a::before{
+  content: '｜';
+  font-size: 1.4rem;
+  color: var(--txt_hoam_3);
+  padding-right: 0.1rem;
+}
+
+section .box:not(:first-child){
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border_hoam_2);
+}
+
+section .box h3{
+  margin-bottom: 3rem;
+}
+
+section .box ul{
+  justify-content: space-evenly;
+}
+
+section .box ul li:not(:first-child){
+  padding-left: 1.5rem;
+}
+
+section .box ul li a{
+  flex-direction: column;
+  row-gap: 1rem;
+  font-size: 1.4rem;
+  color: var(--txt_hoam_3);
+}
+
+section .box ul li a img{
+  width: 5rem;
+  height: 5rem;
+}
+
+section .box>p{
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+section .box>a+a{
+  color: #EFE2CD;
+}

@@ -1,0 +1,9 @@
+/* ====================================
+============== add edit ===============    
+==================================== */
+
+.main_inner .contents .detail ul{
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 3rem;
+}

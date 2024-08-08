@@ -1,0 +1,17 @@
+/* ====================================
+============== add edit ===============    
+==================================== */
+
+.main_inner .contents .detail h5{
+    padding-bottom: 1rem;
+}
+
+.main_inner .contents .detail ul,
+.main_inner .contents .detail p{
+    padding-bottom: 2.5rem;
+}
+
+.main_inner .contents .detail>a{
+    display: inline-block;
+    border-bottom: 1px solid;
+}
