@@ -1,0 +1,316 @@
+@import url(./common.css);
+
+:root {
+  --gray_000: #ffffff;
+  --gray_100: #faf8f8;
+  --gray_200: #f2eeee;
+  --gray_300: #e4dfdf;
+  --gray_400: #d1cbcb;
+  --gray_500: #b6b1b1;
+  --gray_600: #948e8e;
+  --gray_700: #686464;
+  --gray_800: #353333;
+  --gray_900: #000000;
+  --bg_leeum_10: #000000;
+  --bg_leeum_9: #57575c;
+  --bg_leeum_8: #1878f0;
+  --bg_leeum_7: #a5a5aa;
+  --bg_leeum_6: #d2d2d2;
+  --bg_leeum_5: #e1e1e1;
+  --bg_leeum_4: #f8f1e8;
+  --bg_leeum_3: #f2f2f2;
+  --bg_leeum_2: #f8f9fd;
+  --bg_leeum_1: #ffffff;
+  --txt_leeum_6: #000000;
+  --txt_leeum_5: #1878f0;
+  --txt_leeum_4: #aaaaaa;
+  --txt_leeum_3: #57575c;
+  --txt_leeum_2: #a5a5aa;
+  --txt_leeum_1: #ffffff;
+  --fill_leeum_6: #000000;
+  --fill_leeum_5: #aaaaaa;
+  --fill_leeum_4: #f2f2f2;
+  --fill_leeum_3: #57575c;
+  --fill_leeum_2: #d2d2d2;
+  --fill_leeum_1: #ffffff;
+  --border_leeum_5: #57575c;
+  --border_leeum_4: #d2d2d2;
+  --border_leeum_3: #2b2b2b;
+  --border_leeum_2: #aaaaaa;
+  --border_leeum_1: #f2f2f2;
+  --fill_hoam_3: #00662e;
+  --fill_hoam_2: #000000;
+  --fill_hoam_1: #ffffff;
+  --border_hoam_5: #00662e;
+  --border_hoam_4: #f0ece9;
+  --border_hoam_3: #000f9f;
+  --border_hoam_2: #d2ccc7;
+  --border_hoam_1: #f2f2f2;
+  --txt_hoam_6: #000000;
+  --txt_hoam_5: #7d7369;
+  --txt_hoam_4: #d2ccc7;
+  --txt_hoam_3: #5f574e;
+  --txt_hoam_2: #1878f0;
+  --txt_hoam_1: #ffffff;
+  --bg_hoam_10: #000000;
+  --bg_hoam_7: #000f9f;
+  --bg_hoam_6: #00662e;
+  --bg_hoam_5: #7d7369;
+  --bg_hoam_4: #1878f0;
+  --bg_hoam_3: #ff7276;
+  --bg_hoam_2: #f8f9fd;
+  --bg_hoam_1: #ffffff;
+}
+
+.wrap {
+  margin-bottom: 5rem;
+}
+
+.inner {
+  padding: 0 2.5rem;
+}
+
+.main_inner {
+  padding: 5rem 10% 10rem;
+}
+
+.button_large {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: var(--txt_hoam_1);
+  border-radius: 30rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  background-color: var(--fill_hoam_3);
+  border: 1px solid var(--fill_hoam_3);
+  white-space: nowrap;
+}
+
+.button_xlarge {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: var(--txt_hoam_1);
+  border-radius: 30rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  padding: 0 1.5rem;
+  background-color: var(--fill_hoam_3);
+  border: 1px solid var(--fill_hoam_3);
+  white-space: nowrap;
+}
+
+/* ====================================
+============== header ===============    
+==================================== */
+
+header {
+  width: 100%;
+}
+
+.gnb_normal {
+  width: 100%;
+  height: 6.4rem;
+  position: fixed;
+  z-index: 10;
+}
+
+.gnb_normal .inner {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb_normal .inner .logo a img {
+  height: 1.9rem;
+}
+
+.gnb_normal .inner .gnb_detail {
+  line-height: 6.4rem;
+  column-gap: 6rem;
+  justify-content: center;
+}
+
+.gnb_normal .inner .gnb_detail li a {
+  color: var(--txt_hoam_6);
+  display: block;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.gnb_normal .inner .btn {
+  column-gap: 1rem;
+}
+
+.fix_buttons {
+  font-size: 3rem;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.fix_buttons .inner {
+  justify-content: space-between;
+}
+
+.fix_buttons .inner .custom {
+  display: block;
+  color: var(--txt_hoam_1);
+  background-color: var(--fill_hoam_3);
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.fix_buttons .inner .menu {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--fill_hoam_3);
+  border-radius: 100%;
+  align-content: center;
+}
+
+.fix_buttons .inner .menu .bar {
+  display: block;
+  position: relative;
+  width: 3rem;
+  height: 0.3rem;
+  margin: auto;
+  background-color: var(--txt_hoam_1);
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.fix_buttons .inner .menu .bar::before,
+.bar::after {
+  content: "";
+  position: absolute;
+  height: 0.3rem;
+  width: 3rem;
+  background-color: var(--txt_hoam_1);
+  left: 50%;
+  margin-left: -50%;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.fix_buttons .inner .menu .bar::before {
+  bottom: -6px;
+}
+.fix_buttons .inner .menu .bar::after {
+  top: -6px;
+}
+
+/* ====================================
+============== main ===============    
+==================================== */
+
+.main_inner {
+  min-width: 72rem;
+  max-width: 50%;
+  margin: auto;
+  padding-top: 11.4rem;
+}
+
+.main_inner h1,
+.main_inner section h2 {
+  text-align: center;
+}
+
+.main_inner section {
+  margin-top: 5rem;
+}
+
+.main_inner section + section {
+  border-top: 1px solid;
+  padding-top: 5rem;
+}
+
+.main_inner section img,
+.main_inner section video {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.main_inner section p {
+  padding-bottom: 2rem;
+}
+
+.main_inner section h2 {
+  margin-bottom: 3rem;
+}
+
+.main_inner section:nth-of-type(2) {
+  flex-direction: column;
+  align-items: center
+}
+
+.main_inner section button {
+  width: fit-content;
+}
+
+/* ====================================
+============== footer ===============    
+==================================== */
+
+footer {
+  width: 100%;
+}
+
+.company {
+  justify-content: space-between;
+  align-self: baseline;
+}
+
+.company .info .h5 {
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.company .sns {
+  font-size: 4rem;
+}
+
+.company .sns a {
+  padding-left: 1rem;
+}
+
+.company .sns a:first-child {
+  padding-right: 0.3rem;
+}
+
+.etc {
+  margin-top: 8rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.etc .left {
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.etc .left .menu {
+  color: var(--txt_leeum_6);
+}
+
+.etc .left .menu a:not(:first-child)::before {
+  content: "| ";
+  color: var(--txt_leeum_3);
+}
+
+.etc .left .link {
+  color: var(--txt_leeum_3);
+}
+
+.etc .left .link a:last-child:before {
+  content: "| ";
+  color: var(--txt_leeum_3);
+}
