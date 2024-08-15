@@ -36,61 +36,99 @@
   <meta property="og:site_name" content="project2-cover" />
   <meta property="og:description" content="최유진의 project2 입니다." />
   <link rel="stylesheet" href="./css/main_hoam.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/main_hoam_tablet.css" media="screen and (max-width:767px)">
 </head>
 
 <body>
   <div class="wrap">
-    <header class="pr">
-      <nav class="gnb_normal">
-        <div class="inner df">
-          <div class="logo">
-            <a href="#">
-              <img src="./imgs/hoam/hoam_logo_white.png" alt="호암로고">
-            </a>
-          </div>
-          <ul class="gnb_detail df">
-            <li><a href="#" class="h4">방문 안내</a></li>
-            <li><a href="#" class="h4">전시</a></li>
-            <li><a href="#" class="h4">프로그램</a></li>
-            <li><a href="#" class="h4">전통정원 희원</a></li>
+    <header>
+      <div class="gnb_wrap pr">
+        <nav class="pr">
+          <ul class="inner pa df">
+            <li class="logo">
+              <a href="./hoam.html">
+                <img src="./imgs/hoam/hoam_logo_white.png" class="logo1" alt="호암로고">
+                <img src="./imgs/hoam/hoam_logo_black.png" class="logo2 dn" alt="호암로고">
+              </a>
+              <ul class="deps2">
+                <li class="font_content_16">안녕하세요.<br>호암미술관을 방문해주셔서 감사합니다.</li>
+              </ul>
+            </li>
+            <li class="gnb">
+              <ul class="gnb_detail df">
+                <li class="deps1"><a href="#" class="h4">방문 안내</a></li>
+                <li class="deps1">
+                  <a href="#" class="h4">전시</a>
+                  <ul class="deps2">
+                    <li class="font_content_16"><a href="#">현재전시</a></li>
+                    <li class="font_content_16"><a href="#">예정전시</a></li>
+                    <li class="font_content_16"><a href="#">과거전시</a></li>
+                  </ul>
+                </li>
+                <li class="deps1"><a href="#" class="h4">프로그램</a></li>
+                <li class="deps1"><a href="#" class="h4">전통정원 희원</a></li>
+              </ul>
+            </li>
+            <li class="btn df">
+              <a href="./leeum.html" class="button_large">리움</a>
+              <a href="#" class="button_large">ENG <i class="fa-solid fa-arrows-rotate"></i></a>
+              <a href="./hoam_login.html" class="button_large">로그인</a>
+              <a href="./hoam_join_the_membership.html" class="button_large">회원가입</a>
+            </li>
           </ul>
-          <div class="btn df">
-            <a href="./leeum.html" type="button" class="button_large">리움</a>
-            <a href="#" type="button" class="button_large">ENG <i class="fa-solid fa-arrows-rotate"></i></a>
-            <a href="./hoam_login.html" type="button" class="button_large">로그인</a>
-            <a href="./hoam_join_the_membership.html" type="button" class="button_large">회원가입</a>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <div class="fix_buttons">
         <div class="inner df">
-          <a href="#" type="button" class="custom">
+          <a href="#" class="custom">
             <i class="fa-sharp fa-solid fa-gear"></i>
           </a>
-          <a href="#" type="button" class="menu df">
+          <a href="#" class="menu df">
             <i class="bar"></i>
           </a>
         </div>
       </div>
-      <div class="banner_card pa">
-        <div class="banner_title df">
-          <h3>전통정원 &lsaquo;희원&rsaquo;</h3>
-          <a href="#" type="button" class="button_xlarge">상세보기</a>
+
+      <!-- Swiper BG slide -->
+      <div class="swiper header_bg_card">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide garden">
+            <div class="bg_img_garden"></div>
+            <div class="banner_card pa">
+              <div class="banner_title df">
+                <h3>전통정원 &lsaquo;희원&rsaquo;</h3>
+                <a href="#" class="button_xlarge">상세보기</a>
+              </div>
+              <div class="banner_detail">
+                <div class="place font_content_16">야외</div>
+                <div class="date font_content_16">상설 관람</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide nicolasparty">
+            <div class="bg_img_nicolasparty"></div>
+            <div class="banner_card pa">
+              <div class="banner_title df">
+                <h3>니콜라스 파티: 더스트</h3>
+                <a href="#" class="button_xlarge">상세보기</a>
+              </div>
+              <div class="banner_detail">
+                <div class="place font_content_16">전시실 1, 2</div>
+                <div class="date font_content_16">2024.08.31.~2025.01.19.</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="banner_detail">
-          <div class="place font_content_16">야외</div>
-          <div class="date font_content_16">상설 관람</div>
-        </div>
+        <div class="scroll_icon pa"></div>
       </div>
-      <div class="scroll_icon pa"></div>
     </header>
     <main>
       <div class="main_inner">
         <section class="heewon">
           <div class="section_title df">
             <h2>전통정원 희원</h2>
-            <a href="#" type="button" class="button_xlarge">전통정원 희원 더보기</a>
+            <a href="#" class="button_xlarge">전통정원 희원 더보기</a>
           </div>
           <div class="img pr">
             <a href="#"><img src="./imgs/hoam/heewon-img01.jpg" alt="전통정원 희원 썸네일"></a>
@@ -99,7 +137,7 @@
         <section class="notice">
           <div class="section_title df">
             <h2>공지</h2>
-            <a href="./hoam_notice.html" type="button" class="button_xlarge">공지 더보기</a>
+            <a href="./hoam_notice.html" class="button_xlarge">공지 더보기</a>
           </div>
           <div class="notice_list df">
             <a href="./hoam_notice_240312.html" class="notice_detail font_content_16 df">
@@ -163,9 +201,9 @@
               <form action="#" method="post">
                 <select name="family site" id="family_site">
                   <option value="선택">패밀리사이트</option>
-                  <option value="삼성재단"><a href="#">삼성재단</a></option>
-                  <option value="WANA"><a href="#">WANA</a></option>
-                  <option value="리움미술관"><a href="#">리움미술관</a></option>
+                  <option value="삼성재단">삼성재단</option>
+                  <option value="WANA">WANA</option>
+                  <option value="리움미술관">리움미술관</option>
                 </select>
               </form>
             </div>
@@ -174,8 +212,10 @@
       </div>
     </footer>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="./js/hoam_main_script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <script src="./js/hoam_main_script.js"></script>
 </body>
 
 </html>

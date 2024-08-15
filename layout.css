@@ -1,9 +1,0 @@
-@import url(https://qwerewqwerew.github.io/source/style/reset.css);
-
-header,footer{background-color: #000;}
-section{background-color: #ddd;}
-section:nth-child(odd){background-color: #555;}
-.wrap>*,section{min-height: 500px;}
-.inner{padding: 6% 4vw;
-background-color: red;
-height: inherit;}

@@ -62,10 +62,6 @@
   --bg_hoam_1: #ffffff;
 }
 
-.wrap {
-  margin-bottom: 5rem;
-}
-
 .inner {
   padding: 0 2.5rem;
 }
@@ -109,47 +105,132 @@
 header {
   width: 100%;
   height: 100vh;
-  background-image: url(../imgs/hoam/bg_desktop.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
-.gnb_normal {
+/* 상단 고정 내비게이션 */
+header .gnb_wrap{
+  position: fixed;
   width: 100%;
   height: 6.4rem;
-  position: fixed;
   z-index: 10;
 }
 
-.gnb_normal .inner {
-  justify-content: space-between;
-  align-items: center;
+nav{
+  height: 100%;
+  color: var(--txt_hoam_1);
 }
 
-.gnb_normal .inner .logo a img{
+nav:hover::before {
+  height: 25rem;
+  border-top: 1px solid var(--border_hoam_2);
+}
+
+nav:hover .inner li ul{
+  height: 25rem;
+}
+
+nav:hover{
+  background-color: var(--bg_hoam_1);
+}
+
+nav:hover ul.inner li.gnb ul.gnb_detail li.deps1>a{
+  color: var(--txt_hoam_6);
+}
+
+nav::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 6.4em;
+  background-color: var(--bg_hoam_1);
+  z-index: 5;
+}
+
+nav ul.inner {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+}
+
+nav ul.inner>li:not(.btn){
+  height: 100%;
+}
+
+nav ul.inner li.logo a{
+  display: block;
+  height: 100%;
+  line-height: 6.4rem;
+}
+
+nav ul.inner li.logo a img {
   height: 1.9rem;
 }
 
-.gnb_normal .inner .gnb_detail {
-  line-height: 6.4rem;
-  column-gap: 6rem;
-  justify-content: center;
+.dn{
+  display: none;
 }
 
-.gnb_normal .inner .gnb_detail li a {
-  color: var(--txt_leeum_1);
-  display: block;
+nav:hover ul.inner li.logo a img.logo1{
+  display: none;
+}
+
+nav:hover ul.inner li.logo a img.logo2{
+    display: inline;
+  }
+
+nav ul.inner li.gnb ul.gnb_detail {
   height: 100%;
-  width: 100%;
+  line-height: 6.4rem;
+  text-align: center;
+  column-gap: 6rem;
+  justify-content: space-between;
   white-space: nowrap;
 }
 
-.gnb_normal .inner .btn {
+nav ul.inner li.gnb ul.gnb_detail li.deps1>a {
+  color: inherit;
+  display: block;
+  height: 100%;
+  width: 12.6rem;
+  white-space: nowrap;
+}
+
+nav:hover ul.inner li.gnb ul.gnb_detail li.deps1>a{
+  color: var(--txt_hoam_6);
+}
+
+ul.deps2{
+  color: var(--txt_hoam_6);
+  overflow: hidden;
+  height: 0;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+ul.deps2>li:first-child{
+  padding-top: 1.5rem;
+}
+
+nav ul.inner li.gnb ul.gnb_detail li.deps1 ul{
+  border-left: 1px solid var(--border_hoam_2);
+  padding-left: 2rem;
+  margin-left: 5rem;
+}
+
+nav ul.inner li.btn {
   column-gap: 1rem;
 }
 
+/* 스크롤시 css */
+.change_back_font_color{
+  background-color: var(--bg_hoam_1);
+  color: var(--txt_hoam_6);
+}
+
+/* 화면 중앙 좌우 고정 버튼 */
 .fix_buttons{
   font-size: 3rem;
   width: 100%;
@@ -213,6 +294,27 @@ header {
   top: -6px;
 }
 
+/* 해더 배경 슬라이드 */
+.swiper.header_bg_card{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.swiper .swiper-wrapper .swiper-slide .bg_img_garden{
+  background-image: url(../imgs/hoam/bg_garden_desktop.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.swiper .swiper-wrapper .swiper-slide .bg_img_nicolasparty{
+  background-image: url(../imgs/hoam/bg_nicolasparty.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
 .banner_card {
   width: 40%;
   max-width: 60rem;
@@ -244,6 +346,7 @@ header {
   margin-top: 3.4rem;
 }
 
+/*해더 하단 중앙 스크롤 안내 아이콘 */
 .scroll_icon{
   width: 5rem;
   height: 5rem;
@@ -256,6 +359,7 @@ header {
   bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
 }
 
 /* ====================================
@@ -264,6 +368,7 @@ header {
 
 main {
   width: 100%;
+  background: var(--bg_hoam_1);
 }
 
 .main_inner section {
@@ -339,6 +444,11 @@ main {
 
 footer {
   width: 100%;
+  background: var(--bg_hoam_1);
+}
+
+footer>.inner{
+  padding-bottom: 5rem;
 }
 
 .company {

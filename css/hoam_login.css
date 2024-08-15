@@ -62,6 +62,10 @@
   --bg_hoam_1: #ffffff;
 }
 
+body{
+  margin-bottom: 5rem;
+}
+
 .inner {
   padding: 0 2.5rem;
 }
@@ -102,6 +106,12 @@
 ============== header ===============    
 ==================================== */
 
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .inner {
   height: 6.4rem;
   align-items: center;
@@ -117,7 +127,7 @@
 
 main{
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 11rem;
 }
 
 section{

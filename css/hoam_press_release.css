@@ -108,43 +108,91 @@
 
 header {
   width: 100%;
-}
-
-.gnb_normal {
-  width: 100%;
   height: 6.4rem;
   position: fixed;
-  z-index: 10;
   background-color: var(--bg_hoam_1);
 }
 
-.gnb_normal .inner {
+nav {
+  height: 100%;
+}
+
+nav:hover::before {
+  height: 25rem;
+  border-top: 1px solid var(--border_hoam_2);
+}
+
+nav:hover .inner li ul {
+  height: 25rem;
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 6.4em;
+  background-color: var(--bg_hoam_1);
+  z-index: 5;
+}
+
+nav ul.inner {
   height: 100%;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  z-index: 10;
 }
 
-.gnb_normal .inner .logo a img {
+nav ul.inner > li:not(.btn) {
+  height: 100%;
+}
+
+nav ul.inner li.logo a {
+  display: block;
+  height: 100%;
+  line-height: 6.4rem;
+}
+
+nav ul.inner li.logo a img {
   height: 1.9rem;
 }
 
-.gnb_normal .inner .gnb_detail {
+nav ul.inner li.gnb ul.gnb_detail {
   height: 100%;
-  text-align: center;
   line-height: 6.4rem;
+  text-align: center;
   column-gap: 6rem;
   justify-content: space-between;
-}
-
-.gnb_normal .inner .gnb_detail li a {
-  color: var(--txt_hoam_6);
-  display: block;
-  height: 100%;
-  width: 100%;
   white-space: nowrap;
 }
 
-.gnb_normal .inner .btn {
+nav ul.inner li.gnb ul.gnb_detail li.deps1 > a {
+  color: var(--txt_hoam_6);
+  display: block;
+  height: 100%;
+  width: 12.6rem;
+  white-space: nowrap;
+}
+
+ul.deps2 {
+  overflow: hidden;
+  height: 0;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+ul.deps2 > li:first-child {
+  padding-top: 1.5rem;
+}
+
+nav ul.inner li.gnb ul.gnb_detail li.deps1 ul {
+  border-left: 1px solid var(--border_hoam_2);
+  padding-left: 2rem;
+  margin-left: 5rem;
+}
+
+nav ul.inner li.btn {
   column-gap: 1rem;
 }
 
@@ -212,53 +260,6 @@ header {
   top: -6px;
 }
 
-/* 투뎁스 */
-
-nav.gnb_normal::before {
-  content: "";
-  position: absolute;
-  top: 6.4rem;
-  width: 100%;
-  height: 300px;
-  background-color: var(--bg_hoam_1);
-  transition: height 0.5s;
-}
-
-.gnb_normal .inner .logo{
-  height: 100%;
-}
-
-.gnb_normal .inner .logo a{
-  display: block;
-  height: 100%;
-  line-height: 6.4rem;
-}
-
-.gnb_normal .inner .logo ul, .gnb_normal .inner .gnb_detail li ul{
-  height: 300px;
-  width: 100%;
-  overflow: hidden;
-  transition: height 0.5s;
-  margin-left: 3rem;
-}
-
-.gnb_normal .inner .gnb_detail li ul{
-  border-left: 1px solid var(--border_hoam_2);
-  }
-
-.gnb_normal .inner .logo ul li, .gnb_normal .inner .gnb_detail li ul li a{
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding-top: 1rem;
-}
-
-.gnb_normal:hover::before, .gnb_normal:hover .inner .gnb_detail li ul{
-  height: 300px;
-  box-sizing: border-box;
-  border-top: 1px solid var(--border_hoam_2);
-}
-
 /* ====================================
   ============== main ===============    
   ==================================== */
@@ -272,9 +273,64 @@ nav.gnb_normal::before {
   margin-bottom: 5rem;
 }
 
+/* search */
+
 .main_inner .search_container {
   justify-content: right;
   margin-bottom: 3rem;
+}
+
+.main_inner .search_container .search_box .search_blank{
+  z-index: 0;
+}
+
+.main_inner .search_container .search_box .search_blank input{
+  width: 26rem;
+  height: 3.6rem;
+  padding-left: 1rem;
+  padding-right: 3.3rem;
+  background-color: var(--bg_hoam_1);
+  border: 1px solid var(--border_hoam_2);
+  font-size: 1.6rem;
+  cursor: auto;
+  color: var(--txt_hoam_6);
+  z-index: 0;
+}
+
+.main_inner .search_container .search_box .search_blank button.erase{
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--bg_hoam_1);
+  border: 0;
+  color: var(--txt_hoam_3);
+  font-size: 1.6rem;
+}
+
+.main_inner .search_container .search_box button.search{
+  background-color: var(--bg_hoam_1);
+  border: 1px solid var(--border_hoam_2);
+  border-left: 0;
+  padding: 0 1rem;
+  font-weight: bold;
+  color: var(--txt_hoam_3);
+}
+
+.main_inner .search_container button.chooseing_date{
+  background-color: var(--bg_hoam_1);
+  border: 1px solid var(--border_hoam_2);
+  font-size: 1.6rem;
+  color: var(--txt_hoam_3);
+  padding: 0 1rem;
+  margin-left: 1rem;
+}
+
+/* card */
+
+.main_inner .card_container {
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .main_inner .card_container .card {
@@ -284,6 +340,7 @@ nav.gnb_normal::before {
 
 .main_inner .card_container .card .img {
   overflow: hidden;
+  z-index: -1;
 }
 
 .main_inner .card_container .card .img::before {
@@ -309,6 +366,21 @@ nav.gnb_normal::before {
 .main_inner .card_container .card .img img {
   width: 100%;
 }
+
+.main_inner .card_container a.card .title,
+.main_inner .card_container a.card .date {
+  line-height: 2.5rem;
+}
+
+.main_inner .card_container a.card .title{
+  color: var(--txt_hoam_6);
+}
+
+.main_inner .card_container a.card .date{
+  color: var(--txt_hoam_3);
+}
+
+/* pager */
 
 .main_inner .pager {
   padding-top: 5rem;
