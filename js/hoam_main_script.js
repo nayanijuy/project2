@@ -21,3 +21,9 @@ $(window).scroll(function () {
     $("nav").removeClass("change_back_font_color");
   }
 });
+
+// 팝업에서 닫기 눌렀을때 사라지는거, 스크롤방지 풀기 : jquery
+$('.notice_close').on('click',()=>{
+  $('#notice').addClass('dn');
+  $('body').removeClass('hidden')
+})
